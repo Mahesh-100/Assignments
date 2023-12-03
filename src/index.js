@@ -1,6 +1,55 @@
 import React from "react";
 import  ReactDOM from "react-dom";
+import "./style.css";
+const Header =()=>{
+    return (
+        <header className="header">
+        <div className="logo">
+            <img className="logo" src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-7.png"></img>
+        </div>
+        <div className="search-bar">
+            <input type="text" placeholder="Search"/>
+        </div>
+        <div className="user-icon">
+            <img className="logo" src="https://tse1.mm.bing.net/th?id=OIP.S7b6f8rMY6sKGpE6zHm5QgHaHa&pid=Api&P=0&h=180"></img>
+        </div>
+       </header>
+    )
+}
+ReactDOM.render(<Header/>,document.getElementById("root"))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //create a nested header element using React.createElement(h1,h2,h3,inside a div with class "title")
 const header=React.createElement("div",{className:"title"},[
     React.createElement("h1",{},"this is heading h1"),
@@ -59,7 +108,7 @@ const attributes=(
         )
     }
     ReactDOM.render(<Sample/>,document.getElementById("root"))
-/*
+
 var h=React.createElement("h1",{},"hello world by react")
 var res=document.getElementById("root")
 var result=ReactDOM.createRoot(res)
@@ -70,3 +119,4 @@ var y=React.createElement("p",{},"nested element")
 var z=document.getElementById("root1")
 var r=ReactDOM.createRoot(z)
 r.render(React.createElement("div",{},x,y));*/
+
